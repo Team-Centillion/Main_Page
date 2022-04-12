@@ -1,6 +1,140 @@
 .nav_bar {
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 5%), inset 0 -1px 0 rgb(0 0 0 / 15%);
+    position: sticky;
+    opacity: 100%;
+    width: 100%;
+    top: 0px;
+    z-index: 50;
+    backdrop-filter: blur(50px);
 }
-.main_con {
-    margin-left: 16px;
+
+::-webkit-scrollbar {
+    width: 0px;  /* 세로축 스크롤바 길이 */
+    height: 20px;  /* 가로축 스크롤바 길이 */
+}
+
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 100;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 300;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 500;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');} body, h1, h2, h3, h4, h5, h6, input, textarea, select { font-family: 'Noto Sans KR', sans-serif; }
+
+
+body {
+    padding: 0;
+    margin: 0;
+
+  }
+  
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    text-align: center;
+  }
+  
+  
+  .c2 {
+    height: 400px;
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .slide-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .slide {
+    position: absolute;
+    display: none;
+    z-index: 0;
+  }
+  .slide.enabled {
+    display: block;
+  }
+  
+  .slide-big-text p {
+    margin: 0;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.35;
+    letter-spacing: -1.5px;
+    word-spacing: 1.5px;
+    text-align: center;
+  }
+  
+  
+  .slide-small-text {
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+  
+  .slide-small-text p {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .scdown {
+    position: absolute;
+    padding: 30px 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    bottom: 0px;
+  }
+
+.item {
+    text-align: center;
+    font-size: 60px;
+    font-family: "Noto Sans KR";
+    font-weight: 700;
+    margin-bottom: 500px;
+    margin-top: 500px;
+    position: relative;
+    top: 50%;    
+}
+
+.scroll {
+    text-align: center;
+    position:sticky;
+    top: 90%;
+    background:none;
+    border:none;
+
+}
+
+p {
+    display: inline;
+}
+
+.before {
+    width: 400px;
+    height: 400px;
+    margin: 40px auto;
+    border: 10px solid #fff;
+
+    position: relative;
+}
+.before:before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    display: block;
+    width: 0px;
+    height: 10px;
+    background-color: #111;
+    transition: all linear 0.5s;
+    animation: fadein 2s;
+    width: 420px;
+}
+
+
+@keyframes fadein {
+    from { width: 0px; }
+    to   { width: 420px; }
 }
