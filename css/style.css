@@ -138,3 +138,14 @@ p {
     from { width: 0px; }
     to   { width: 420px; }
 }
+.footer {
+margin : 0;
+padding : 15px;
+background-color: rgba(194, 194, 194, 0.301);
+}
+
+.small-title {
+  font-size: 25px;
+  font-style: italic;
+
+}
