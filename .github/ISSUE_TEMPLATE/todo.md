@@ -1,5 +1,5 @@
 ---
-name: 할 것
+name: TODO
 about: TODO
 title: "[TODO]"
 labels: TODO
@@ -9,5 +9,5 @@ assignees: ''
 
 할일:
 담당자:
-<!--있으면 --!/>
+<-- 있으면 --/>
 부담당자:
