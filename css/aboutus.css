@@ -1,0 +1,23 @@
+.profile{
+    background-color:rgba(163, 163, 163, 0.067);
+    padding-top:30px;
+    padding-bottom:30px;
+    height: auto;
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    padding-left:200px;
+    padding-right: 200px;
+    margin-bottom: 0;
+}
+
+.profilecon {
+    display: inline-block;
+    margin-left: 100px;
+
+}
+
+
+.maincon{
+    margin-bottom: 0;
+}
