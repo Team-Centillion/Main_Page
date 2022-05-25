@@ -1,5 +1,5 @@
 ---
-name: 할것
+name: TODO
 about: TODO
 title: "[TODO]"
 labels: TODO
