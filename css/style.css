@@ -6,6 +6,7 @@
     top: 0px;
     z-index: 50;
     backdrop-filter: blur(50px);
+    background: hsla(0,0%,100%,.5);
 }
 
 ::-webkit-scrollbar {
