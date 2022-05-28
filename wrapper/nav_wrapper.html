@@ -26,3 +26,26 @@
         </ul>
     </header>
 </div>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBvKYQ5IKYwfRGZbHRF8d7ibjWX6P9pVyY",
+      authDomain: "centillion-d2749.firebaseapp.com",
+      projectId: "centillion-d2749",
+      storageBucket: "centillion-d2749.appspot.com",
+      messagingSenderId: "558439434747",
+      appId: "1:558439434747:web:315bd00d3e6984551fa35e",
+      measurementId: "G-W4B8EXYVK1"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>

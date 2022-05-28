@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Team-Centillion/Main_Page/issues"
   },
-  "homepage": "https://github.com/Team-Centillion/Main_Page#readme"
+  "homepage": "https://github.com/Team-Centillion/Main_Page#readme",
+  "dependencies": {
+    "firebase": "^9.8.2"
+  }
 }
