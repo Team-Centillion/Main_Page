@@ -397,6 +397,7 @@ const component = new Vue({
           const r = easing((currentPos - a_top) / (a_bottom - a_top));
           // eslint-disable-next-line no-param-reassign
           this.applyStyles(currentPos, refname, styles, r);
+          
         }
       }
     },
@@ -457,3 +458,5 @@ const component = new Vue({
     }
   }
 });
+
+
